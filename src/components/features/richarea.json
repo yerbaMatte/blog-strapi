@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_features_richareas",
+  "info": {
+    "displayName": "richarea",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "blocks"
+    }
+  }
+}
