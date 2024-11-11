@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subscribers",
+  "info": {
+    "singularName": "subscriber",
+    "pluralName": "subscribers",
+    "displayName": "Subscriber",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "string",
+      "required": true,
+      "minLength": 3,
+      "maxLength": 64
+    },
+    "isVerified": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "verificationToken": {
+      "type": "string",
+      "private": true
+    }
+  }
+}
