@@ -69,7 +69,7 @@ Happy brewing,
             color: #4caf4f;
             font-weight: bold;
           "
-        >@yerbamatte</a>. I'm thrilled to have you with me!</p>
+        >@yerbamatte</a>.</p>
           <p style="font-size: 16px; color: #333;">
             Please verify your email by clicking on the link below:
           </p>
