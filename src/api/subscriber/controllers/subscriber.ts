@@ -63,7 +63,13 @@ Happy brewing,
           </div>
 
           <p style="font-size: 18px; color: #333;">Hello!</p> 
-          <p style="font-size: 16px; color: #333;">Thank you for subscribing to the Code Brew by @yerbamatte. I'm thrilled to have you with me!</p>
+          <p style="font-size: 16px; color: #333;">Thank you for subscribing to the Code Brew by <a href="https://blog.yerbamatte.com/about" 
+          style="
+            display: inline;
+            color: #4caf4f;
+            font-weight: bold;
+          "
+        >@yerbamatte</a>. I'm thrilled to have you with me!</p>
           <p style="font-size: 16px; color: #333;">
             Please verify your email by clicking on the link below:
           </p>
