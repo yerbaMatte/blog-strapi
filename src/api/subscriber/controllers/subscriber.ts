@@ -94,7 +94,13 @@ Happy brewing,
           <p style="font-size: 16px; color: #333;">Once verified, you’ll be part of the Code Brew community!</p>
           <p style="font-size: 16px; color: #333;">I'm excited to keep you updated with exclusive insights, brewing tips, and the latest from the world of Software Engineering.</p>
           
-          <p style="font-size: 16px; color: #333;">Happy brewing,<br>@yerbaMatte</p>
+          <p style="font-size: 16px; color: #333;">Happy brewing,<br><a href="https://blog.yerbamatte.com/about" 
+          style="
+            display: inline;
+            color: #4caf4f;
+            font-weight: bold;
+          "
+        >@yerbamatte</a></p>
           <hr>
           <p style="font-size: 12px; color: #666;">If you did not sign up for this subscription, please disregard this email.</p>
         </div>
