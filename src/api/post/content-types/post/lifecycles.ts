@@ -11,7 +11,7 @@ const sendEmailToSubscribers = async (post) => {
 
   const emailContent = {
     subject: `🧉 Fresh Brew Alert! Check out the latest scoop: ${title}`,
-    text: `Hey there! Just wanted to let you know: "${title}" is hot off the press!\n\nHere's a sneak peek:\n${description}\n\nDive in here: ${process.env.DOMAIN_URL}/posts/${slug}`,
+    text: `Hey there! Just wanted to let you know: "${title}" is hot off the press!\n\nHere's a sneak peek:\n${description}\n\nDive in here: ${process.env.DOMAIN_URL}/blog/${slug}`,
     html: `
       <div style="font-family: Arial, sans-serif; color: #333; line-height: 1.6; padding: 20px;">
         <h1 style="font-size: 26px;">📢 Heads Up! New Brew Just Dropped</h1>
