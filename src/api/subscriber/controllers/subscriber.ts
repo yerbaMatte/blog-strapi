@@ -61,8 +61,6 @@ Happy brewing,
             </div>
             <h2 style="flex: 1; margin: 0; color: #4caf4f; font-size: 20px;">Welcome to Code Brew!</h2>
           </div>
-
-          <p style="font-size: 18px; color: #333;">Hello!</p> 
           <p style="font-size: 16px; color: #333;">Thank you for subscribing to the Code Brew by <a href="https://blog.yerbamatte.com/about" 
           style="
             display: inline;
