@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_features_posters",
+  "info": {
+    "displayName": "Poster",
+    "icon": "cast",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    }
+  }
+}

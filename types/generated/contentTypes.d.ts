@@ -512,7 +512,12 @@ export interface ApiPostPost extends Struct.CollectionTypeSchema {
     slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
     tags: Schema.Attribute.Relation<'manyToMany', 'api::tag.tag'>;
     content: Schema.Attribute.DynamicZone<
-      ['features.richarea', 'features.image', 'features.code']
+      [
+        'features.richarea',
+        'features.image',
+        'features.code',
+        'features.poster',
+      ]
     >;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;

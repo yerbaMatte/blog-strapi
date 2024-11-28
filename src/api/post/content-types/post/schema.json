@@ -36,7 +36,8 @@
       "components": [
         "features.richarea",
         "features.image",
-        "features.code"
+        "features.code",
+        "features.poster"
       ]
     }
   }
