@@ -20,4 +20,8 @@ export default ({ env }) => ({
       },
     },
   },
+  notification: {
+    enabled: true,
+    resolve: "./src/plugins/notification",
+  },
 });
