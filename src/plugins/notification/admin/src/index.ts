@@ -1,36 +1,30 @@
+import { NotificationPanel } from './components/NotificationPanel';
+import type { PanelComponent } from '@strapi/content-manager/strapi-admin';
 import { PLUGIN_ID } from './pluginId';
+import { Initializer } from './components/Initializer';
+import { StrapiApp } from '@strapi/strapi/admin';
 
-const wow = () => {
-  return {
-    label: 'Test',
-    icon: null,
-    disabled: false,
-    type: 'default',
-    variant: 'secondary',
-    onClick: () => {
-      alert('Button clicked!');
-    },
+interface ContentManagerPlugin {
+  apis: {
+    addEditViewSidePanel: (panels: PanelComponent[]) => void;
   };
-};
+}
 
 export default {
-  register(app: any) {
+  register(app: StrapiApp) {
     app.registerPlugin({
       id: PLUGIN_ID,
+      initializer: Initializer,
+      isReady: false,
       name: PLUGIN_ID,
     });
   },
 
-  bootstrap(app: any) {
-    const contentManager = app.getPlugin('content-manager');
+  bootstrap(app: StrapiApp) {
+    const contentManagerPlugin = app.getPlugin(
+      'content-manager'
+    ) as unknown as ContentManagerPlugin;
 
-    if (contentManager) {
-      // Adding the bulk action properly with the correct shape
-      contentManager.apis.addBulkAction([wow]);
-    }
-  },
-
-  async registerTrads(app: any) {
-    return [];
+    contentManagerPlugin.apis.addEditViewSidePanel([NotificationPanel]);
   },
 };

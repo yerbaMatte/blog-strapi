@@ -1,25 +1,13 @@
-import type { Struct, Schema } from '@strapi/strapi';
+import type { Schema, Struct } from '@strapi/strapi';
 
-export interface FeaturesRicharea extends Struct.ComponentSchema {
-  collectionName: 'components_features_richareas';
+export interface FeaturesCode extends Struct.ComponentSchema {
+  collectionName: 'components_features_codes';
   info: {
-    displayName: 'richarea';
-    icon: 'apps';
+    displayName: 'code';
+    icon: 'code';
   };
   attributes: {
-    content: Schema.Attribute.Blocks;
-  };
-}
-
-export interface FeaturesPoster extends Struct.ComponentSchema {
-  collectionName: 'components_features_posters';
-  info: {
-    displayName: 'Poster';
-    icon: 'cast';
-    description: '';
-  };
-  attributes: {
-    image: Schema.Attribute.Media<'images' | 'files'>;
+    code: Schema.Attribute.RichText;
   };
 }
 
@@ -34,24 +22,36 @@ export interface FeaturesImage extends Struct.ComponentSchema {
   };
 }
 
-export interface FeaturesCode extends Struct.ComponentSchema {
-  collectionName: 'components_features_codes';
+export interface FeaturesPoster extends Struct.ComponentSchema {
+  collectionName: 'components_features_posters';
   info: {
-    displayName: 'code';
-    icon: 'code';
+    description: '';
+    displayName: 'Poster';
+    icon: 'cast';
   };
   attributes: {
-    code: Schema.Attribute.RichText;
+    image: Schema.Attribute.Media<'images' | 'files'>;
+  };
+}
+
+export interface FeaturesRicharea extends Struct.ComponentSchema {
+  collectionName: 'components_features_richareas';
+  info: {
+    displayName: 'richarea';
+    icon: 'apps';
+  };
+  attributes: {
+    content: Schema.Attribute.Blocks;
   };
 }
 
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
-      'features.richarea': FeaturesRicharea;
-      'features.poster': FeaturesPoster;
-      'features.image': FeaturesImage;
       'features.code': FeaturesCode;
+      'features.image': FeaturesImage;
+      'features.poster': FeaturesPoster;
+      'features.richarea': FeaturesRicharea;
     }
   }
 }
