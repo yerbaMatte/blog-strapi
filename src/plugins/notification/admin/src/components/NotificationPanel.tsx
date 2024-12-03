@@ -2,8 +2,8 @@ import type { PanelComponent, PanelComponentProps } from '@strapi/content-manage
 import notificationApi from '../api/notification';
 
 const ToolsPanel = ({ document }: { document: any }) => {
+  if (!document) return;
   const { description, slug, title } = document;
-  console.log(document);
 
   const handleSendNotification = async () => {
     try {

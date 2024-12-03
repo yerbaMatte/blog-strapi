@@ -39,6 +39,10 @@
         "features.code",
         "features.poster"
       ]
+    },
+    "isUpdated": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
